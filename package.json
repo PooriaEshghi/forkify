@@ -1,0 +1,29 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PooriaEshghi/forkify.git"
+  },
+  "author": "Pooria Eshghi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PooriaEshghi/forkify/issues"
+  },
+  "homepage": "https://github.com/PooriaEshghi/forkify#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0"
+  },
+  "dependencies": {
+    "core-js": "^3.24.1",
+    "fractional": "^1.0.0",
+    "parcel": "^2.7.0",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.54.4"
+  }
+}
