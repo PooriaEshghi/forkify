@@ -1,5 +1,4 @@
 import icons from 'url:../../img/icons.svg';
-import {Fraction} from 'fractional';
 import View from './view';
 
 
@@ -23,6 +22,7 @@ class recipeView extends View {
       })   
     };
     addHandlerAddBookmark(handler){
+      
       this._parentElement.addEventListener('click',function(e){
         const btn = e.target.closest('.btn--bookmark')
         if(!btn) return;
@@ -112,7 +112,7 @@ class recipeView extends View {
             <svg class="recipe__icon">
               <use href="${icons}#icon-check"></use>
             </svg>
-            <div class="recipe__quantity">${ing.quantity?new Fraction(ing.quantity).toString():'' }</div>
+            <div class="recipe__quantity">${ing.quantity? +ing.quantity.toFixed(1):'' }</div>
             <div class="recipe__description">
               <span class="recipe__unit">${ing.unit}</span>
               ${ing.description}
