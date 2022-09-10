@@ -614,7 +614,6 @@ const controlAddRecipe = async function(newRecipe) {
         (0, _addRecipeViewJsDefault.default).renderSpinner();
         // Upload the new recipe
         await _modelJs.uploadRecipe(newRecipe);
-        console.log(_modelJs.state.recipe);
         // Render recipe
         (0, _recipeViewJsDefault.default).render(_modelJs.state.recipe);
         // Success message

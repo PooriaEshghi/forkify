@@ -99,7 +99,6 @@ const controlAddRecipe = async function(newRecipe){
     
       // Upload the new recipe
     await  model.uploadRecipe(newRecipe)
-    console.log(model.state.recipe)
 
     // Render recipe
     recipeView.render(model.state.recipe)
